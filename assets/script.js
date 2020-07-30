@@ -2,9 +2,9 @@
 // variables 
 
 
-var destinationID = ''
-var locationID = 0;
-var cuisineID = 0;
+// var destinationID = ''
+// var locationID = 0;
+// var cuisineID = 0;
 
 
 
@@ -37,7 +37,7 @@ $(document).ready(function(){
 // Autocomplete 
 
 $(document).ready(function(){
-    $('input.autocomplete').autocomplete({
+    $('input.white grey-text autocomplete').autocomplete({
       data: {
         "Rome": null,
         "Paris": null,
