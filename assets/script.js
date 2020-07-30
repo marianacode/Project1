@@ -5,13 +5,12 @@ $(document).ready(function () {
     let APIkey = "8ed72bc9e077393211fcb8e5f0153fbd";
 
 
-<<<<<<< HEAD
 //     $.ajax({
 //         url: queryURL,
 //         method: "GET"
 //     }).then(function (response) {
 //             console.log(queryURL)
-=======
+
 // var destinationID = ''
 // var locationID = 0;
 // var cuisineID = 0;
@@ -66,7 +65,6 @@ $(document).ready(function(){
  
 
 // $('.dropdown-trigger').dropdown();
->>>>>>> 394378e68bd6b226cfec736f52aced03deab7ada
 
 //         })
 })
