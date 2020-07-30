@@ -46,6 +46,36 @@ h1 {
 }
 
 h2 {
-
+ 
 
 }
+
+.bannedCountry{
+  font-size: 32px;
+  font-weight: 900;
+  color: red;
+
+}
+
+.restaurantMsg{
+  font-style: italic;
+  font-weight: 900;
+}
+
+.travelBan{
+  background-color: paleturquoise;
+  border-top: teal;
+  border-bottom: teal;
+  border-left: teal;
+  border-right: teal;
+  border-width: 2px;
+  border-style:solid;
+  display: block;
+  height: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
