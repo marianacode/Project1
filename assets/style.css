@@ -21,7 +21,7 @@ body {
 .recipes {
   display: block;
   position: relative;
-  width: 1300px;
+  width: 75%;
   background-color: lightgrey;
   margin: 20px auto 20px auto;
   padding: 20px 20px 20px 20px;
