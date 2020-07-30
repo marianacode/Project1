@@ -1,14 +1,38 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+.section-search input { 
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: lightgray 3px solid !important;
+}
+
+ 
+  
 
 
-  p {
-font-family: 'Hind', sans-serif;
+body {
+  font-family: 'Hind', sans-serif;
+}
+
+/* Testing container size. */
+.recipes {
+  display: block;
+  position: relative;
+  width: 1300px;
+  background-color: lightgrey;
+  margin: 20px auto 20px auto;
+  padding: 20px 20px 20px 20px;
+  background-size: contain;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
 h1 {
-
+  text-align: center;
 }
 
 h2 {
