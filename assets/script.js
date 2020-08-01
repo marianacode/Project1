@@ -1,15 +1,23 @@
 $(document).ready(function () {
-    let restaurants;
+  const restaurantList = document.getElementsByClassName(restaurants);
+   
 
-    let queryURL = "https://developers.zomato.com/api/v2.1/search" + APIkey;
+    let queryURL = "https://developers.zomato.com/api/v2.1/restaurant?" + APIkey;
     let APIkey = "8ed72bc9e077393211fcb8e5f0153fbd";
 
 
-//     $.ajax({
-//         url: queryURL,
-//         method: "GET"
-//     }).then(function (response) {
-//             console.log(queryURL)
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+            console.log(queryURL);
+            console.log(response);
+
+    });
+    let convert = JSON.stringify(response);
+    $()
+
+    
 
 // var destinationID = ''
 // var locationID = 0;
