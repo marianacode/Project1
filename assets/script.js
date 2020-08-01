@@ -24,28 +24,29 @@ var cuisineID = 0;
 
 // sideNav 
 
-
-
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-    });        
-
-  $(document).ready(function(){
-    $('.slider').slider({
-        data: { 
-    indicators: false,
-    height: 500,
-    transition: 500,
-    interval: 6000
-    },
-  });
+$(document).ready(function () {
+  $('.sidenav').sidenav();
 });
-        
-// Autocomplete 
 
-$(document).ready(function(){
-    $('input.white grey-text autocomplete').autocomplete({
+
+
+// Carousel 
+
+$(document).ready(function () {
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+
+
+  });
+})
+
+
+
+
+  // Autocomplete 
+
+  $(document).ready(function () {
+    $('input.autocomplete').autocomplete({
       data: {
         "Rome": null,
         "Paris": null,
@@ -55,15 +56,12 @@ $(document).ready(function(){
         "London": null,
         "Turkey": null,
         "Mykonos": null
+      },
+    });
+  });
 
-    },
-});
-});
-  
 
- 
 
-// $('.dropdown-trigger').dropdown();
 
 //         })
 })
