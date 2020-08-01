@@ -7,21 +7,22 @@
     <title>Covid-19</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://kit.fontawesome.com/e066a4f184.js" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="assets/materialize.min.css" media="screen,projection" />
     <link href="assets/style.css" rel="stylesheet">
-    <link href="assets/script.js" rel="js">
+
+
 
 
 
 </head>
 
 <body id="home" class="scrollspy">
-    
-   
+
+
     <header>
-       
+
         <!-- Nav Bar  -->
         <div class="navbar-fixed">
             <nav class="blue">
@@ -29,7 +30,7 @@
                     <div class="nav-wrapper">
                         <a href="#!" class="brand-logo">Covid-19 Travel App</a>
                         <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-                            <i class="material-icons">Menu</i>
+                            <i class="small material-icons">menu</i>
                         </a>
                         <ul class="right hide-on-med-and-down">
                             <li>
@@ -49,7 +50,7 @@
         </div>
 
         <!-- Side Nav  -->
-        
+
         <ul class="sidenav" id="mobile-nav">
             <li>
                 <a href="#home">Home</a>
@@ -59,78 +60,74 @@
             </li>
         </ul>
 
-        </header>
+    </header>
 
-        <!-- Section - Slider  -->
+    <!-- Section - Carousel  -->
 
-        <section class="slider">
-            <ul class="slides">
-                <li>
-                    <img src="assets/Images/Background2.jpg"> 
-                    <div class="caption center-align">
-                        <h2>Where do you want to go?</h2>
-                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">Placeholder for text.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/Images/Rome.jpg"> 
-                    <div class="caption left-align">
-                        <h2>Choose a place</h2>
-                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Assumenda tenetur iure eum, magnam, molestias voluptas iusto
-                            quae nisi corrupti exercitationem sint numquam consequatur temporibus autem recusandae
-                            voluptate neque facere ad?.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/Images/Background2.jpg"> 
-                    <div class="caption right-align">
-                        <h2>Right Aligned Caption</h2>
-                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">Placeholder for text.</h5>
-                    </div>
-                </li>
-            </ul>
+    <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="assets/Images/Rome.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="assets/Images/Paris.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="assets/Images/Rio de Janeiro.jpg"></a>
+    </div>
 
+    
 
-        </section>
+    </section>
 
-        <!-- Section - Search  -->
+    <!-- Section - Search - Autocomplete -->
 
-        <section id="search" class="section section-search blue darken-1 white-text center scrollspy">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h3>Search Destinations</h3>
-                        <div class="input-field">
-                            <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Rome, Paris, etc...">
+    <section id=autocomplete class="section section-search blue darken-1 white-text center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Where do you want to go?</h3>
+                    <div class="input-field">
+                        <input type="text" class="white grey-text autocomplete" id="autocomplete-input"
+                            placeholder="Rome, Paris, etc...">
 
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
 
 
 
 
-        </section>
-        <section>
-            <article class="bookIt">
+    </section>
+    <section>
+        <article class="bookIt">
 
-                <div class="row">
+            <div class="row">
 
-                    <div class="column">
-                        <h2>Book your trip to %location%!</h2>
+                <div class="column">
+                    <h2>Book your trip to %location%!</h2>
 
-                    </div>
-
-
-                    <div class="column">IMAGE PLACEHOLDER</div>
                 </div>
 
-            </article>
+
+                <div class="column">IMAGE PLACEHOLDER</div>
+            </div>
+
+        </article>
+
+        <div class="row">
+            <article class="travelBan">
+
+
+                <div class="col-md-12">
+                    <h2>Travel Bans are in effect for //country name//</h2>
+                    <p>We are sorry, the US State Department indicates you are not eligible for travel to //country
+                        name//. Please enjoy this list of //country name// restaurants in your area:
+                    </p>
+                    <section class="restaurants">
+                        <!-- google map image of your current location w/ restaurant associated to the country-->
+                        <div class="container">
+
+                            <div class="row">
+                                <!-- list of restaurants near you -->
 
             <div class="row">
                 <article class="travelBan">
@@ -147,66 +144,70 @@
                                 <div class="row">
                                     <!-- list of restaurants near you -->
 
-                                    <div class="column">
-                                        <p>restaurant1</p>
-                                        <!-- add image of restaurant -->
-                                    </div>
+                                <div class="column">
+                                    <p>restaurant1</p>
+                                    <!-- add image of restaurant -->
+                                </div>
 
-                                    <div class="column">
-                                        <p>restaurant2</p>
-                                        <!-- add image of restaurant -->
-                                    </div>
+                                <div class="column">
+                                    <p>restaurant2</p>
+                                    <!-- add image of restaurant -->
+                                </div>
 
-                                    <div class="column">
-                                        <p>restaurant3</p>
-                                        <!-- add image of restaurant -->
-                                    </div>
-
+                                <div class="column">
+                                    <p>restaurant3</p>
+                                    <!-- add image of restaurant -->
                                 </div>
 
                             </div>
 
-                    </div>
-
-        </section>
-
-        </div>
-        </div>
-
-        </article>
-
-        <!-- Container holding headings, paragraphs, lists, etc. -->
-        <article class="recipes">
-            <div class="row">
-                <div class="column">
-
-                    <h1>Brazilian Recipes</h1>
-                    <p>We're sorry, there are no Brazilian restaurants in your area. You may enjoy some of these
-                        delicious
-                        recipes from <i>myrecipe.com</i></p>
+                        </div>
 
                 </div>
 
-                <!-- Container holding suggestions -->
-                <div class="column">
-                    <!-- List of recommended recipes go here. -->
-                </div>
-            </div>
-        </article>
+    </section>
 
-        </section>
+    </div>
+    </div>
 
-        <footer>
-            <div class="footer">
-                <div class="container">
-                    Copyright 2020
-                </div>
+    </article>
+
+    <!-- Container holding headings, paragraphs, lists, etc. -->
+    <article class="recipes">
+        <div class="row">
+            <div class="column">
+
+                <h1>Brazilian Recipes</h1>
+                <p>We're sorry, there are no Brazilian restaurants in your area. You may enjoy some of these
+                    delicious
+                    recipes from <i>myrecipe.com</i></p>
 
             </div>
 
-        </footer>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+            <!-- Container holding suggestions -->
+            <div class="column">
+                <!-- List of recommended recipes go here. -->
+            </div>
+        </div>
+    </article>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                Copyright 2020
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+
 </body>
 
 </html>
