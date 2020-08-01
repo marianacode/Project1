@@ -1,6 +1,12 @@
 $(document).ready(function () {
+
+  const restaurantList = document.getElementsByClassName(restaurants);
+   
+
+    let queryURL = "https://developers.zomato.com/api/v2.1/restaurant?" + APIkey;
     let restaurants;
     let queryURL = "https://developers.zomato.com/api/v2.1/search" + APIkey;
+
     let APIkey = "8ed72bc9e077393211fcb8e5f0153fbd";
 
 
@@ -8,7 +14,15 @@ $(document).ready(function () {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
+
+            console.log(queryURL);
+            console.log(response);
+
+    });
+    let convert = JSON.stringify(response);
+    $()
             console.log(queryURL)
+
 
 var destinationID = ''
 var locationID = 0;
