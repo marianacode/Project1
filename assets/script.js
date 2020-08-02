@@ -1,8 +1,6 @@
 
-
 // Start jQuery 
-
-
+console.log(json[1])
 
 // sideNav 
 
@@ -46,11 +44,10 @@ $(document).ready(function(){
 
 
 //flight scanner with flight time and price
-
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/USA/USD/en-US/?" + x-rapidapi-key, 
+	"url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/USA/USD/en-US/?",
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
@@ -60,12 +57,12 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
 	console.log(response);
+ $("<p>").text(response.Quotes.MinPrice);
+ $("<p>").text(response.Carriers.CarrierId.Name);
+ $("<p>").text(response.Quotes.OutboundLeg.DepartureDate);
 });
 
 
-var flightQuote = $("<p>").text(response.Quotes.MinPrice);
-var flightCarriers = $("<p>").text(response.Carriers.CarrierId.Name);
-var flightDeparture = $("<p>").text(response.Quotes.OutboundLeg.DepartureDate);
 
 // Display flight information from Seattle
  $("#flightInfo").on("click", function(event) {
@@ -76,22 +73,22 @@ var flightDeparture = $("<p>").text(response.Quotes.OutboundLeg.DepartureDate);
 //  Travel Ban/Restaurant
  $(document).ready(function () {
 
-  const restaurantList = document.getElementsByClassName(restaurants);
-   
-
-    let queryURL = "https://developers.zomato.com/api/v2.1/restaurant?" + APIkey;
+  const restaurantList = document.querySelector(".restaurants");
+   let APIkey = "8ed72bc9e077393211fcb8e5f0153fbd";
+    let queryURL1 = "https://developers.zomato.com/api/v2.1/cities?city_ids=20000";
     let restaurants;
    
 
-    let APIkey = "8ed72bc9e077393211fcb8e5f0153fbd";
+    
 
 
     $.ajax({
-        url: queryURL,
-        method: "GET"
+        url: queryURL1,
+        method: "GET",
+        headers: {
+          "user-key": APIkey
+        }
     }).then(function (response) {
-
-            console.log(queryURL);
             console.log(response);
 
     });
