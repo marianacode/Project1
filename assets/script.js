@@ -73,6 +73,7 @@ var flightDeparture = $("<p>").text(response.Quotes.OutboundLeg.DepartureDate);
  })
 
 
+//  Travel Ban/Restaurant
  $(document).ready(function () {
 
   const restaurantList = document.getElementsByClassName(restaurants);
