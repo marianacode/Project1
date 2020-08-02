@@ -1,35 +1,3 @@
-$(document).ready(function () {
-
-  const restaurantList = document.getElementsByClassName(restaurants);
-   
-
-    let queryURL = "https://developers.zomato.com/api/v2.1/restaurant?" + APIkey;
-    let restaurants;
-    let queryURL = "https://developers.zomato.com/api/v2.1/search" + APIkey;
-
-    let APIkey = "8ed72bc9e077393211fcb8e5f0153fbd";
-
-
-    $.ajax({
-        url: queryURL,
-        method: "GET"
-    }).then(function (response) {
-
-            console.log(queryURL);
-            console.log(response);
-
-    });
-    let convert = JSON.stringify(response);
-    $()
-            console.log(queryURL)
-
-
-var destinationID = ''
-var locationID = 0;
-var cuisineID = 0;
-
-
-
 
 
 // Start jQuery 
@@ -43,16 +11,13 @@ $(document).ready(function () {
 });
 
 
+// Slider 
 
-// Carousel 
+$(document).ready(function(){
+  $('.slider').slider();
+});
+      
 
-$(document).ready(function () {
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true
-
-
-  });
-})
 
 
 
@@ -78,7 +43,7 @@ $(document).ready(function () {
 
 
 //         })
-})
+
 
 //flight scanner with flight time and price
 
@@ -106,3 +71,36 @@ var flightDeparture = $("<p>").text(response.Quotes.OutboundLeg.DepartureDate);
  $("#flightInfo").on("click", function(event) {
   event.preventDefault();
  })
+
+
+ $(document).ready(function () {
+
+  const restaurantList = document.getElementsByClassName(restaurants);
+   
+
+    let queryURL = "https://developers.zomato.com/api/v2.1/restaurant?" + APIkey;
+    let restaurants;
+   
+
+    let APIkey = "8ed72bc9e077393211fcb8e5f0153fbd";
+
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+
+            console.log(queryURL);
+            console.log(response);
+
+    });
+    let convert = JSON.stringify(response);
+    $()
+            console.log(queryURL)
+
+
+var destinationID = ''
+var locationID = 0;
+var cuisineID = 0; 
+
+  })
