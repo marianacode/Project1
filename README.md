@@ -15,3 +15,7 @@ If desired country is under a travel ban, then a list of local restaurants that 
 Objective 4:
 
 If there are no restaurants, then a list of recipes that are similar to the desired meals will be displayed.
+
+Objective 5:
+
+Fix merge conflict.
