@@ -14,8 +14,6 @@
 
 
 
-
-
 </head>
 
 <body id="home" class="scrollspy">
@@ -62,15 +60,47 @@
 
     </header>
 
+    <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="assets/Images/Rome.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Rome</h3>
+             
+            </div>
+          </li>
+          <li>
+            <img src="assets/Images/Paris.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Paris</h3>
+             
+            </div>
+          </li>
+          <li>
+            <img src="assets/Images/Rio de Janeiro.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Rio de Janeiro</h3>
+            
+            </div>
+          </li>
+          <li>
+            <img src="assets/Images/Cancun.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Cancun</h3>
+              
+            </div>
+          </li>
+        </ul>
+      </div>
     <!-- Section - Carousel  -->
 
-    <div class="carousel carousel-slider">
+    <!-- <div class="carousel carousel-slider">
         <a class="carousel-item" href="#one!"><img src="assets/Images/Rome.jpg"></a>
         <a class="carousel-item" href="#two!"><img src="assets/Images/Paris.jpg"></a>
         <a class="carousel-item" href="#three!"><img src="assets/Images/Rio de Janeiro.jpg"></a>
-    </div>
+    </div> -->
 
-    
+
 
     </section>
 
@@ -83,7 +113,7 @@
                     <h3>Where do you want to go?</h3>
                     <div class="input-field">
                         <input type="text" class="white grey-text autocomplete" id="autocomplete-input"
-                            placeholder="Rome, Paris, etc...">
+                            placeholder="Rome, Paris, etc..."> <a class="waves-effect waves-light btn">Go!</a>
 
                     </div>
                 </div>
@@ -129,67 +159,70 @@
                             <div class="row">
                                 <!-- list of restaurants near you -->
 
-            <div class="row">
-                <article class="travelBan">
-
-                    <div class="col-md-12">
-                        <h2 class="bannedCountry">Travel Bans are in effect for //country name//</h2>
-                        <p class="restaurantMsg">We are sorry, the US State Department indicates you are not eligible for travel to //country
-                            name//. Please enjoy this list of //country name// restaurants in your area:
-                        </p>
-                        <section class="restaurants">
-                            <!-- google map image of your current location w/ restaurant associated to the country-->
-                            <div class="container">
-
                                 <div class="row">
-                                    <!-- list of restaurants near you -->
+                                    <article class="travelBan">
 
-                                <div class="column">
-                                    <p>restaurant1</p>
-                                    <!-- add image of restaurant -->
-                                </div>
+                                        <div class="col-md-12">
+                                            <h2 class="bannedCountry">Travel Bans are in effect for //country name//
+                                            </h2>
+                                            <p class="restaurantMsg">We are sorry, the US State Department indicates you
+                                                are not eligible for travel to //country
+                                                name//. Please enjoy this list of //country name// restaurants in your
+                                                area:
+                                            </p>
+                                            <section class="restaurants">
+                                                <!-- google map image of your current location w/ restaurant associated to the country-->
+                                                <div class="container">
 
-                                <div class="column">
-                                    <p>restaurant2</p>
-                                    <!-- add image of restaurant -->
-                                </div>
+                                                    <div class="row">
+                                                        <!-- list of restaurants near you -->
 
-                                <div class="column">
-                                    <p>restaurant3</p>
-                                    <!-- add image of restaurant -->
-                                </div>
+                                                        <div class="column">
+                                                            <p>restaurant1</p>
+                                                            <!-- add image of restaurant -->
+                                                        </div>
 
-                            </div>
+                                                        <div class="column">
+                                                            <p>restaurant2</p>
+                                                            <!-- add image of restaurant -->
+                                                        </div>
 
-                        </div>
+                                                        <div class="column">
+                                                            <p>restaurant3</p>
+                                                            <!-- add image of restaurant -->
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                        </div>
+
+                    </section>
+
+                </div>
+        </div>
+
+        </article>
+
+        <!-- Container holding headings, paragraphs, lists, etc. -->
+        <article class="recipes">
+            <div class="row">
+                <div class="column">
+
+                    <h1>Brazilian Recipes</h1>
+                    <p>We're sorry, there are no Brazilian restaurants in your area. You may enjoy some of these
+                        delicious
+                        recipes from <i>myrecipe.com</i></p>
 
                 </div>
 
-    </section>
-
-    </div>
-    </div>
-
-    </article>
-
-    <!-- Container holding headings, paragraphs, lists, etc. -->
-    <article class="recipes">
-        <div class="row">
-            <div class="column">
-
-                <h1>Brazilian Recipes</h1>
-                <p>We're sorry, there are no Brazilian restaurants in your area. You may enjoy some of these
-                    delicious
-                    recipes from <i>myrecipe.com</i></p>
-
+                <!-- Container holding suggestions -->
+                <div class="column">
+                    <!-- List of recommended recipes go here. -->
+                </div>
             </div>
-
-            <!-- Container holding suggestions -->
-            <div class="column">
-                <!-- List of recommended recipes go here. -->
-            </div>
-        </div>
-    </article>
+        </article>
 
     </section>
 
