@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: orange;">
+
+    <header>
+        Recipes
+    </header>
+
+    <div class="container"></div>
+    <form id="recipe-form">
+        <label for="recipe-input">Search for recipes</label>
+        <input type="text" id="recipe-input">
+        <input id="find-recipe" type="submit" value="Recipe Search">
+    </form>
+
+    <div id="recipe-view"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $("#find-recipe").on("click", function (event) {
+            event.preventDefault();
+
+            var recipe = $("#recipe-input").val();
+
+            var appid = "3e9dee68";
+            var key = "20737797ddbd5868c5c037017379a8e6";
+
+            var recipeURL = "https://api.edamam.com/search?q=" + recipe + "&app_id=" + appid + "&app_key=" + key;
+
+            $.ajax({
+                url: recipeURL,
+                method: "GET"
+            }).then(function (response) {
+
+                var list = "<ol>";
+                var results = response.hits;
+
+                for (var i = 0; i < results.length; i++) {
+
+                    list += "<li>" + results[i].recipe.url + "</li>";
+                    console.log(recipeURL);
+                    console.log(response);
+                }
+
+                list += "</ol>";
+
+                document.getElementById("recipe-view").innerHTML = list;
+
+
+            });
+        })
+
+    </script>
+    
+</body>
+
+</html>
+
+<!-- This is the path that I want: hits[0].recipe.ingredientLines -->
+<!-- hits[0].recipe.image -->
