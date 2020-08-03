@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -18,6 +19,7 @@
         Recipes
     </header>
 
+    <!-- Container -->
     <main class="container">
         <div class="card x-large">
             <div class="card-image">
@@ -28,19 +30,22 @@
             <div class="card-content">
                 <p id="recipe-what" class="center">What recipe would you like?</p>
                 <div class="input-field">
+                    <input id="ingredient" type="text" class="validate">
                     <label class="center active" for="ingredient">
-                        "Type your ingredient here"
+                        "Type an ingredient here"
                     </label>
-                    <input id="base" type="text" class="validate valid">
                 </div>
             </div>
         </div>
+
+        <!-- submit button -->
         <p class="center">
             <btn type="submit" id="submit3" class="waves-effect waves-light btn">submit</btn>
         </p>
         <div class="row" id="recipeResults"></div>
 
         <footer>
+            <!-- home button -->
             <p class="right">
                 <a class="waves-effect waves-light btn" href="index.html">
                     <i class="material-icons"></i>
