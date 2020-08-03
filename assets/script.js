@@ -23,6 +23,8 @@ $(document).ready(function(){
   var radius = 0;
   var cuisineID = 0;
 
+  var recipeID = 0;
+
 
 
     $('.dropdown-trigger').dropdown();
