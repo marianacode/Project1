@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/materialize.min.css" media="screen,projection" />
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: rgb(245, 214, 150);">
+
+    <header>
+        Recipes
+    </header>
+
+    <!-- Container -->
+    <main class="container">
+        <div class="card x-large">
+            <div class="card-image">
+                <img class="responsive-img" src="assets/Images/ingredients.jpg" alt="recipe image" width="50%"; height="50%";>
+                <span class="card-title"></span>
+            </div>
+        
+            <div class="card-content">
+                <p id="recipe-what" class="center">What recipe would you like?</p>
+                <div class="input-field">
+                    <input id="ingredient" type="text" class="validate">
+                    <label class="center active" for="ingredient">
+                        "Type an ingredient here"
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- submit button -->
+        <p class="center">
+            <btn type="submit" id="submit3" class="waves-effect waves-light btn">submit</btn>
+        </p>
+        <div class="row" id="recipeResults"></div>
+
+        <footer>
+            <!-- home button -->
+            <p class="right">
+                <a class="waves-effect waves-light btn" href="index.html">
+                    <i class="material-icons"></i>
+                    Home
+                </a>
+            </p>
+        </footer>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="assets/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/script.js"></script>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="recipe-view"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $("#find-recipe").on("click", function (event) {
+            event.preventDefault();
+
+            var recipe = $("#recipe-input").val();
+
+            var appid = "3e9dee68";
+            var key = "20737797ddbd5868c5c037017379a8e6";
+
+            var recipeURL = "https://api.edamam.com/search?q=" + recipe + "&app_id=" + appid + "&app_key=" + key;
+
+            $.ajax({
+                url: recipeURL,
+                method: "GET"
+            }).then(function (response) {
+
+                var list = "<ol>";
+                var results = response.hits;
+
+                for (var i = 0; i < results.length; i++) {
+
+                    list += "<li>" + results[i].recipe.url + "</li>";
+                    console.log(recipeURL);
+                    console.log(response);
+                }
+
+                list += "</ol>";
+
+                document.getElementById("recipe-view").innerHTML = list;
+
+
+            });
+        })
+
+    </script> -->
+    
+
+
+<!-- This is the path that I want: hits[0].recipe.ingredientLines -->
+<!-- hits[0].recipe.image -->
