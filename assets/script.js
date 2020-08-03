@@ -1,6 +1,4 @@
-
-
-// Start jQuery 
+// / Start jQuery 
 
 
 
@@ -40,6 +38,11 @@ $(document).ready(function(){
   });
 
 
+  var locationID = 0;
+  var radius = 0;
+  var cuisineID = 0;
+
+  
 
 
 //         })
@@ -99,8 +102,6 @@ var flightDeparture = $("<p>").text(response.Quotes.OutboundLeg.DepartureDate);
             console.log(queryURL)
 
 
-var destinationID = ''
-var locationID = 0;
-var cuisineID = 0; 
+
 
   })
