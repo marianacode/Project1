@@ -1,7 +1,5 @@
 
-// Start jQuery 
-// console.log(json[1])
-
+// / Start jQuery 
 // sideNav 
 
 $(document).ready(function () {
@@ -38,6 +36,11 @@ $(document).ready(function(){
   });
 
 
+  var locationID = 0;
+  var radius = 0;
+  var cuisineID = 0;
+
+  
 
 
 //         })
@@ -106,9 +109,7 @@ $(document).ready(function(){
     //         console.log(queryURL)
 
 
-var destinationID = ''
-var locationID = 0;
-var cuisineID = 0; 
+
 
   })
 });
