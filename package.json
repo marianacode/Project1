@@ -1,0 +1,24 @@
+{
+  "name": "Project1",
+  "version": "1.0.0",
+  "description": "This is our first project. Due to COVID-19, people have been instructed to quarantine themselves to prevent the spread of the virus. However, many people are bored from staying at home 24/7. Our goal is to create an application that allows users to look up a country they would like to visit and book a trip. The purpose is to show users whether or not their travel plans can become a reality. If not, then options that can provide a similar experience will be suggested.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karunasato/Project1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karunasato/Project1/issues"
+  },
+  "homepage": "https://github.com/karunasato/Project1#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  }
+}
