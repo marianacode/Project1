@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/materialize.min.css" media="screen,projection" />
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body class = "orange lighten-4">
+    <header>
+     Restaurants
+    </header>
+
+    <main class="container">
+        <!-- card -->
+        <div class="card x-large">
+          <div class="card-image">
+            <img class="responsive-img" src="assets/Images/Foods.jpg" alt = "restaurant table">
+            <span class="card-title"></span>
+          </div>
+          <div class="card-content">
+            <p id = "restaurant-location" class = "center">What's your location?</p>
+            <div class="input-field">
+              <input id="location" type="text" class="validate">
+              <label class = "center" for="city">Type the name of your city here</label>
+            </div>
+          </div> 
+        </div>
+
+         <!-- submit button -->
+    <p class="center">
+        <btn type= "submit" id="submit1" class="waves-effect waves-light btn">submit</btn>
+      </p>
+
+         <!-- location drop-down -->
+    <div class="row">
+        <div id="locationDrop" class = "hide">
+          <!-- dropdown Trigger -->
+          <p class = "center">
+          <a id="locationBtn" class='dropdown-trigger btn' href='#' data-target='dropdown1'>Choose your city</a>
+          </p>
+          <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li class="divider" tabindex="-1"></li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- cuisine drop-down -->
+    <div class="row">
+        <div id="cuisineDrop" class = "hide">
+          <!-- dropdown Trigger -->
+          <p class = "center">
+            <a id="cuisineBtn" class='dropdown-trigger btn' href='#' data-target='dropdown2'>Choose the type of cuisine</a>
+          </p>
+          <!-- dropdown Structure -->
+          <ul id='dropdown2' class='dropdown-content'>
+            <li class="divider" tabindex="-1"></li>
+          </ul>
+        </div>
+      </div>
+    
+      <!-- radius -->
+      <div class="row">
+        <div class="input-field col s12 hide" id = "radiusQuestion">
+          <p id = "radius" class = "center"> Distance (Mi.)
+          <input class = "center" style = "width:10%" type="number" id="quantity" name="quantity" min="1" max="25">
+          </p>
+          <!-- submit button -->
+          <p class="center">
+            <a id="radiusSubmit" class="waves-effect waves-light btn">submit</a>
+          </p>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="row" id="restaurantResults"></div>
+      
+    <footer>
+      <!-- main page button -->
+      <p class = "right">
+        <a class="waves-effect waves-light btn" href='index.html'><i class="material-icons"></i>Home</a>
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="assets/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/script.js"></script>
+
+</body>
+
+</html>
+    
