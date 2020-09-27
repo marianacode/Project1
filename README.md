@@ -17,7 +17,7 @@ The search results of the restaurants near the user will be displayed along with
 The search result of the recipes will give a few different recipe options to the user and will display the ingredients needed for the recipe and a link to a website that will give the user more detailed instructions on how to create the recipe.
 
 
-Link to website: https://karunasato.github.io/Project1/
+Link to website: hhttps://marianacode.github.io/Project1/
 
 
 
